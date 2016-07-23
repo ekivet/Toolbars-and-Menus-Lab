@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.erickivet.toolbarlab.Main2Activity">
+    <TextView
+        android:id="@+id/textview_1_2"
+        android:layout_marginTop="95dp"
+        android:text="Life will still be rough..."
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/whiteteeth"
+        android:src="@drawable/whiteteeth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/textview_2_2"
+        android:layout_marginTop="475dp"
+        android:text="But at least you'll have white teeth"
+        android:textSize="25dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -15,4 +39,42 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-</RelativeLayout>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_bottom_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        android:layout_gravity="bottom"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <ImageView
+            android:id="@+id/play_theme_song_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_play_arrow_black_24dp"/>
+        <ImageView
+            android:id="@+id/image_bottom_2"
+            android:src="@android:drawable/ic_media_play"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="28sp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:id="@+id/textview_bottom_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Some Stuff"
+            android:textSize="30dp"/>
+        <ImageView
+            android:id="@+id/display_info_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_contacts_black_24dp"
+            android:layout_marginRight="10dp"/>
+    </android.support.v7.widget.Toolbar>
+
+
+
+</FrameLayout>
